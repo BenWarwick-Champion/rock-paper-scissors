@@ -26,7 +26,10 @@ buttons.forEach( (button) => {
         };
 
         if (checkWin(pScore, cScore)) {
-            gameOver(pScore, cScore);
+            // Add 100ms delay before alert to let p update
+            setTimeout(() => {
+                gameOver(pScore, cScore);
+            }, 100);
         }
     });
 });
