@@ -9,6 +9,10 @@ body {
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    background-image: url('images/paper_background.png');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -27,17 +31,40 @@ button {
     width: 30%;
     min-width: 10em;
     height: 10em;
-    border-width: 1px;
+    border-width: 3px;
     border-color: rgba(0,0,0,0.2);
     border-style: solid;
     border-radius: 25px;
-    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+    text-align: right;
+    font-weight: bold;
+    padding-right: 1em;
+    background-color: rgba(0,0,0,0.4);
+}
+
+button:hover {
+    box-shadow: 0 0 14px 4px rgba(0,0,0,0.2);
 }
 
 #buttons {
     display: flex;
     align-items: center;
     width: 80%;
+}
+
+#rock {
+    background: url('images/rock.png') no-repeat;
+    background-size: contain;
+}
+
+#paper {
+    background: url('images/paper.png') no-repeat;
+    background-size: contain;
+}
+
+#scissors {
+    background: url('images/scissors.png') no-repeat;
+    background-size: contain;
 }
 
 #scoreboard {
@@ -72,6 +99,7 @@ h3 {
 #info-message {
     margin: 1em;
     padding: 1em 0 0;
+    font-weight: bold;
 }
 
 .score {
