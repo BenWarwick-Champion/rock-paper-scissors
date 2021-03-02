@@ -76,9 +76,9 @@ function checkWin(playerScore, computerScore) {
 function gameOver(playerScore, computerScore) {
     console.log(playerScore, computerScore);
     if (playerScore > computerScore) {
-        alert('You win!');
+        alert('You win! Refresh the page to play again.');
     } else {
-        alert('You lose!');
+        alert('You lose! Refresh the page to play again.');
     }
 }
 
